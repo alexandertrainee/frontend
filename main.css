@@ -875,10 +875,13 @@ body{
     background-color: var(--secondary-color);
   }
   .sellers__head {
-    height: 50%;
+    height: 22%;
     width: 48%;
     margin: 0 auto;
     text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
   .sellers__head-title {
     height: 50%;
@@ -886,7 +889,7 @@ body{
   .sellers__head-subtitle {
     padding-top: 20px;
     height: 50%;
-    font-size: calc(10px + 5 * ((100vw - 320px) / (1400 - 320)));
+    font-size: calc(8px + 5 * ((100vw - 320px) / (1400 - 320)));
     color: #464646;
   }
   .sellers__content {
@@ -1085,7 +1088,7 @@ body{
   }
 
   .best__giveaway-movie{
-    height: 40%;
+    height: 30%;
     width: 100%;
   }
   .best__video{
