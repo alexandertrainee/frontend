@@ -823,18 +823,24 @@ body{
   .main-page__preorder{
     padding-top: 30px;
     width: 100%;
-    height: 40%;
+    height: 50%;
   }
   
   .main-page__preorder-title{
     margin-top: 0;
     padding-top: 5px;
+    font-size: 15px;
     margin-bottom: 10px;
   }
 
   .main-page__preorder-subtitle{
     margin-top: 10px;
     margin-bottom: 10px;
+    font-size: 10px;
+  }
+
+  .main-page__preorder-img {
+    height: 55%;
   }
 
   .button--preorder-margin{
@@ -843,21 +849,64 @@ body{
   }
 
   .main-page__desc{
-    height: 60%;
+    height: 50%;
     width: 100%;
+    background-size: 300%;
+    background-position: 8% 60%;
   }
 
   .main-page__desc-img {
     margin: 0;
-    padding-top: 10%;
+    /* padding-top: 10%; */
   }
 
+  .main-page__desc-subtitle {
+    font-size: calc(12px + 5 * ((100vw - 320px) / (1400 - 320)));
+  }
 
+  .button__body {
+    font-size: calc(10px + 7 * ((100vw - 320px) / (1400 - 320)));
 
+  }
+
+  .button__body--black{
+    font-size: calc(12px + 7 * ((100vw - 320px) / (1400 - 320)));
+    padding: 0.5rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;;
+    border: 2px solid black;
+    color: black;
+  }
   .about__inner{
     display: flex;
     flex-direction: column;
 
+  }
+
+  .about__desc-specific {
+    height: 100%;
+    background-image: url("images/diab.png");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position:  center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .about__desc-specific-inner{
+    height: 84%;
+    width:75%;
+  }
+  .about__desc-specific-title {
+    font-family: 'Domine', serif;
+    font-size: calc(14px + 6 * ((100vw - 320px) / (1400 - 320)));
+    color: white;
+  }
+  .about__desc-specific-text {
+    font-size: calc(10px + 8 * ((100vw - 320px) / (1400 - 320)));
+    color: var(--third-color);
   }
 
   .about__main-img{
@@ -870,7 +919,8 @@ body{
   .about__title{
     height: 5%;
     font-size: calc(20px + 10 * ((100vw - 320px) / (1400 - 320)));
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    margin-top: -10px;
   }
   .about__desc-specific {
     height: 99%;
@@ -885,11 +935,30 @@ body{
     justify-content: center;
   }
 
+  .about__main-img-icon {
+    object-fit:cover;
+    width: 100%;
+    height: 95%;
+  }
+
+  .about__subtitle-up {
+    margin-top: -10px;
+    height: 50%;
+    display: flex;
+    font-size: calc(12px + 7 * ((100vw - 320px) / (1400 - 320)));
+    align-items: center;
+  }
+  .about__subtitle-down {
+    margin-top: 4px;
+    font-size: calc(12px + 7 * ((100vw - 320px) / (1400 - 320)));
+
+  }
+
   .about__main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 35%;
+    height: 40%;
     width: 100%;
   }
 
@@ -913,14 +982,16 @@ body{
   }
   .sellers__head-title {
     margin-top: 10px;
-    height: 50%;
+    height: 30%;
   }
   .sellers__head-subtitle {
-    padding-bottom: 20px;
-    height: 50%;
-    font-size: calc(8px + 5 * ((100vw - 320px) / (1400 - 320)));
+    padding-bottom: 10px;
+    height: 80%;
+    font-size: calc(12px + 5 * ((100vw - 320px) / (1400 - 320)));
     color: #464646;
   }
+
+  
   .sellers__content {
     height: 78%;
     width: 100%;
@@ -938,10 +1009,10 @@ body{
   }
   .sellers__content-item {
     background-color: #fff;
-    width: 48%;
-    height: 44%;
-    margin-top: 14px;
-    margin-bottom: 13px;
+    width: 49%;
+    height: 50%;
+    margin-top: 7px;
+    /* margin-bottom: 10px; */
   }
 
   .sellers__content-item-hover-info{
@@ -981,8 +1052,9 @@ body{
     margin-top: 2%;
     height: 30%;
     width: 15%;
-    display: flex;
+    display: none;
     justify-content: space-between;
+    
   }
   .sellers__navigation-item-left{
     height: 100%;
@@ -1039,6 +1111,7 @@ body{
     display: flex;
     align-items: center;
     text-align: center;
+    padding-top: 20px;
   }
   .best__title-text {
     width: 17%;
@@ -1047,6 +1120,9 @@ body{
     margin: 0 auto;
     font-family: 'Domine', serif;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    text-align: center;
   }
   .best__giveaway {
     height: 90%;
@@ -1115,6 +1191,7 @@ body{
   }
   .best__text {
     color: black;
+    font-size: 15px;
   }
 
   .best__giveaway-movie{
@@ -1140,7 +1217,7 @@ body{
   }
   .parfums__inner {
     height: 90%;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -1150,7 +1227,7 @@ body{
   .parfums__item {
     padding-top:10px;
     height: 30%;
-    width:  44%;
+    width:  48%;
   }
   .parfum__icon {
     height: 100%;
@@ -1160,13 +1237,14 @@ body{
   }
 
   .footer--height{
-    height: 30%;
+    height: auto;
   }
   .footer__inner {
     height: 100%;
     background-color: black;
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
     align-items: center;
   }
   .footer__logo {
@@ -1177,8 +1255,9 @@ body{
     align-items: center;
   }
   .footer__logo-item {
-    width: 70%;
-    height: 50%;
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
   }
   .footer__feedback {
     width: 30%;
@@ -1191,7 +1270,7 @@ body{
     padding-top:1%;
   }
   .footer__feedback-icon {
-    height: 100%;
+    height: 100px;
   }
 
   .footer__feedback-form {
@@ -1220,8 +1299,9 @@ body{
   }
   .footer__copyright {
     color: var(--primary-color);
-    font-size: 8px;
+    font-size: 10px;
     font-family: 'Domine', serif;
+    margin-bottom: 10px;
   }
   .footer__contacts {
     width: 40%;
@@ -1245,6 +1325,7 @@ body{
     color: white;
     font-size: 10px;
     font-family: 'Domine', serif;
+    display: none;
   }
   .footer__contact-email{
     padding-right: 6%;
@@ -1253,6 +1334,39 @@ body{
     color: white;
     font-size: 8px;
     font-family: 'Domine', serif;
+  }
+
+  .footer__text {
+    height:10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    font-size: calc(10px + 4 * ((100vw - 320px) / (1400 - 320)));
+    font-family: 'Domine', serif;
+  }
+  .footer__feedback-form {
+    margin-top:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:30%;
+    margin-bottom:10px;
+  }
+  .footer__feedback-input {
+    background-color: black;
+    color: white;
+    padding-top: 2px;
+    padding-left: 5px;
+    padding-bottom: 4px;
+    max-width: 165px;
+    height: 60%;
+    border: 1px solid var(--primary-color);
+    
+  }
+
+  .social-networks__inner {
+    display: none;
   }
 
   .scroller__inner{
@@ -1364,6 +1478,6 @@ body{
   .logo__image{
     margin-right: -6px;
   }
-
+  
 }
 
